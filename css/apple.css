@@ -1,0 +1,166 @@
+:root {
+    --title-span-color: rgb(5, 5, 5);
+  
+    --font-medium: 1em;
+    --font-medium-large: 1.25em;
+    --font-large: 1.3rem;
+    --font-x-large: 2rem;
+    --font-2x-large: 3rem;
+    --font-3x-large: 3.5rem;
+  
+    --transition-fast: 0.2s;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    background:#F2F2F2;
+}    
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    width: 100%;
+    height: 80px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}    
+header{
+    background-color: #262626;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 5px;
+}
+.nav-container a{
+    color: white;
+}    
+.nav-container .links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+} 
+.nav-container{
+    display: flex;
+    align-items: center;
+}    
+.nav-container .links a{
+    text-decoration: none;
+    transition: var(--transition-fast);
+    font-family: "Roboto", sans-serif;
+}
+.nav-container .links a {
+    font-size: var(--font-medium);
+}    
+.nav-container .links a:hover{
+    font-size: var(--font-large);
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    animation-name: presentacion;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction:alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes presentacion{
+
+    0%{
+    background-image: url(../img/banner.jpg);
+    }
+
+    50%{
+        background-image: url(../img/banner2.jpg);
+        }
+
+    100%{
+        background-image: url(../img/banner3.jpg);
+    }
+    100%, 0%{
+        background-image: url(../img/banner4.jpg);
+    }
+}
+.categoria a{
+    text-decoration: none;
+}
+.categoria h4{
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif;
+    color:#262626;
+}
+.smartphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conte_parent{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    
+  }
+.conte{
+    height: 470px;
+    width: 300px;
+    background: white;
+    box-shadow:0 0 7px #111 ;
+    margin: 25px 25px;
+}
+.conte .phone{
+    height: 160px;
+    width: 100%;
+    margin-bottom: 160px;
+}
+.phone img{
+    margin: auto;
+    display: block;
+}
+.conte:hover{
+    transform: scale(1.1);
+}
+.conte .phone img{
+    height: 300px;
+    width: 300px;
+}
+.informacion h3{
+    text-align: center;
+    color:#262626;
+}
+.informacion p{
+    padding-left: 25px;
+    font-family: sans-serif;
+    font-size: .9em;
+    color: #555;
+}
+.precio {
+    height:50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-precio{
+    width: 80px;
+}
+ .precio1{
+    color: red;
+    font-size: .5em;
+}
+.precio .precio2{
+    font-size: 1.2em;
+}
